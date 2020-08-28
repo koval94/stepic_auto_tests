@@ -1,0 +1,4 @@
+selenium
+pytest
+unittest2
+#rerunfailures==9.0
