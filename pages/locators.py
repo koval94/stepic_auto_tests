@@ -5,7 +5,7 @@ class MainPageLocators:
     LOGIN_LINK = (By.CSS_SELECTOR, "#login_link")
 
 
-class LoginPage:
+class LoginPageLocators:
     EMAIL_LOGIN_FIELD = (By.CSS_SELECTOR, "input[name='login-username']")
     PASSWORD_LOGIN_FIELD = (By.CSS_SELECTOR, "input[name='login-password']")
     FORGOT_PASSWORD_LINK = (By.XPATH, ".//button[@type = 'submit']/preceding-sibling::p/a")
