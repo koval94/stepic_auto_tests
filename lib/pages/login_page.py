@@ -1,8 +1,10 @@
+"""login_page.py - Contains all classes and its method related to Login page."""
 from .base_page import BasePage
 from .locators import LoginPageLocators
 
 
 class LoginPage(BasePage):
+    """Login page that contains method related to Login page."""
     def should_be_login_page(self):
         self.should_be_login_url()
         print("login page")
@@ -12,7 +14,7 @@ class LoginPage(BasePage):
         print("It is reg form")
 
     def should_be_login_url(self):
-        # реализуйте проверку на корректный url адрес
+        """Checks current url address."""
         assert "login" in self.browser.current_url, "This is wrong url"
 
     def should_be_login_form(self):
